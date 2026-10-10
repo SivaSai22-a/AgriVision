@@ -1,0 +1,522 @@
+
+/* =========================================
+   AGRICULTURE AI
+   PREMIUM LOGIN PAGE
+========================================= */
+
+.login-page {
+
+  min-height: calc(100vh - 76px);
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(22, 101, 52, 0.10),
+      transparent 35%
+    ),
+    #f5f8f6;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 60px 25px;
+
+}
+
+
+/* =========================================
+   MAIN WRAPPER
+========================================= */
+
+.login-wrapper {
+
+  width: 100%;
+
+  max-width: 1050px;
+
+  min-height: 620px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 70px rgba(15, 55, 42, 0.13);
+
+  border: 1px solid #e5ebe7;
+
+}
+
+
+/* =========================================
+   LEFT INTRODUCTION
+========================================= */
+
+.login-introduction {
+
+  background:
+    linear-gradient(
+      145deg,
+      #0b3325,
+      #123f2f 55%,
+      #0b2b21
+    );
+
+  color: white;
+
+  padding: 65px 55px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+}
+
+
+/* BRAND */
+
+.login-brand {
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+
+  margin-bottom: 18px;
+
+}
+
+
+.login-brand span {
+
+  color: #55d99a;
+
+}
+
+
+/* GREEN LINE */
+
+.login-line {
+
+  width: 45px;
+
+  height: 3px;
+
+  background: #55d99a;
+
+  border-radius: 10px;
+
+  margin-bottom: 35px;
+
+}
+
+
+/* HEADING */
+
+.login-introduction h1 {
+
+  font-size: 42px;
+
+  line-height: 1.15;
+
+  letter-spacing: -1.2px;
+
+  margin-bottom: 25px;
+
+  font-weight: 700;
+
+}
+
+
+.login-introduction > p {
+
+  max-width: 430px;
+
+  color: #b8ccc2;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+
+  margin-bottom: 40px;
+
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.login-features {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+}
+
+
+.login-features div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding-left: 18px;
+
+  border-left: 2px solid #2c7355;
+
+}
+
+
+.login-features strong {
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+}
+
+
+.login-features span {
+
+  color: #91ada0;
+
+  font-size: 12px;
+
+}
+
+
+/* =========================================
+   RIGHT CARD
+========================================= */
+
+.login-card {
+
+  padding: 70px 65px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  background: #ffffff;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.login-card-header {
+
+  margin-bottom: 38px;
+
+}
+
+
+.login-card-header h2 {
+
+  margin: 0 0 10px;
+
+  color: #17251f;
+
+  font-size: 31px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.7px;
+
+}
+
+
+.login-card-header p {
+
+  margin: 0;
+
+  color: #7a8881;
+
+  font-size: 14px;
+
+}
+
+
+/* =========================================
+   FORM FIELD
+========================================= */
+
+.login-field {
+
+  margin-bottom: 23px;
+
+}
+
+
+.login-field label {
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #27362f;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+
+.login-field input {
+
+  width: 100%;
+
+  height: 50px;
+
+  padding: 0 15px;
+
+  border: 1px solid #d9e2dd;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background: #fbfcfb;
+
+  color: #17251f;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+
+}
+
+
+.login-field input::placeholder {
+
+  color: #a1aaa5;
+
+}
+
+
+.login-field input:focus {
+
+  background: #ffffff;
+
+  border-color: #279866;
+
+  box-shadow:
+    0 0 0 3px rgba(39, 152, 102, 0.10);
+
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-button {
+
+  width: 100%;
+
+  height: 51px;
+
+  margin-top: 10px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #16734c;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+}
+
+
+.login-button:hover {
+
+  background: #1b8759;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 22px rgba(22, 115, 76, 0.20);
+
+}
+
+
+.login-button:disabled {
+
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+}
+
+
+/* =========================================
+   REGISTER
+========================================= */
+
+.login-register {
+
+  margin-top: 28px;
+
+  padding-top: 24px;
+
+  border-top: 1px solid #edf0ee;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 5px;
+
+  flex-wrap: wrap;
+
+  font-size: 13px;
+
+}
+
+
+.login-register span {
+
+  color: #7a8881;
+
+}
+
+
+.login-register a {
+
+  color: #16734c !important;
+
+  font-weight: 600;
+
+  text-decoration: none !important;
+
+}
+
+
+.login-register a:hover {
+
+  color: #0b4d32 !important;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+  .login-wrapper {
+
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+
+  }
+
+  .login-introduction {
+
+    padding: 45px;
+
+  }
+
+  .login-introduction h1 {
+
+    font-size: 34px;
+
+  }
+
+  .login-features {
+
+    display: none;
+
+  }
+
+  .login-card {
+
+    padding: 50px 45px;
+
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .login-page {
+
+    padding: 25px 15px;
+
+  }
+
+  .login-introduction {
+
+    padding: 35px 28px;
+
+  }
+
+  .login-introduction h1 {
+
+    font-size: 30px;
+
+  }
+
+  .login-card {
+
+    padding: 40px 25px;
+
+  }
+
+  .login-card-header h2 {
+
+    font-size: 27px;
+
+  }
+
+}
+

@@ -1,0 +1,146 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c7744);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CONTAINER */
+.container {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* TITLE */
+h1 {
+  color: #ffffff;
+  font-size: 34px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #c8facc;
+  margin-bottom: 20px;
+}
+
+/* CARD DESIGN (GLASSMORPHISM) */
+.card {
+  width: 380px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* INPUT FIELDS */
+input,
+select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+
+  transition: 0.3s;
+}
+
+/* PLACEHOLDER */
+input::placeholder {
+  color: #d0ffd0;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+select:focus {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(90deg, #00c853, #64dd17);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 255, 100, 0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 255, 100, 0.5);
+}
+
+/* RESULT BOX */
+.result {
+  margin-top: 20px;
+  padding: 18px;
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 15px;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 255, 100, 0.3);
+
+  color: #b9ffb9;
+
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .card,
+  .result {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
