@@ -3,6 +3,7 @@ from flask_cors import CORS
 
 import pickle
 import mysql.connector
+import os
 
 from flask_bcrypt import Bcrypt
 
@@ -68,21 +69,17 @@ except Exception as e:
 def get_db():
 
     try:
+        mysql.connector.connect(
+    host=os.environ["DB_HOST"],
+    user=os.environ["DB_USER"],
+    password=os.environ["DB_PASSWORD"],
+    database=os.environ["DB_NAME"],
+    port=int(os.getenv("DB_PORT", "3306"))
+)
+       
 
 
-        connection = mysql.connector.connect(
-
-            host="localhost",
-
-            user="root",
-
-            password="24030-CM-014",
-
-            database="agriculture"
-
-        )
-
-
+    
         return connection
 
 
